@@ -2570,7 +2570,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff479f;
+  background: #265d22;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2615,7 +2615,7 @@ header.header {
   }
 }
 body {
-  background: url("/images/background.png");
+  background: url("../images/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
