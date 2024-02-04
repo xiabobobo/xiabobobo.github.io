@@ -3,11 +3,11 @@
   <title>Opps!小王的新博客</title>
   
   <subtitle>啊啊啊</subtitle>
-  <link href="http://xiaowang.github.io/atom.xml" rel="self"/>
+  <link href="https://xiabobobo.github.io/xiaowang.site/atom.xml" rel="self"/>
   
-  <link href="http://xiaowang.github.io/"/>
+  <link href="https://xiabobobo.github.io/xiaowang.site/"/>
   <updated>2024-02-04T05:51:03.568Z</updated>
-  <id>http://xiaowang.github.io/</id>
+  <id>https://xiabobobo.github.io/xiaowang.site/</id>
   
   <author>
     <name>这里是小王</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://xiaowang.github.io/2024/02/04/hello-world/"/>
-    <id>http://xiaowang.github.io/2024/02/04/hello-world/</id>
+    <link href="https://xiabobobo.github.io/xiaowang.site/2024/02/04/hello-world/"/>
+    <id>https://xiabobobo.github.io/xiaowang.site/2024/02/04/hello-world/</id>
     <published>2024-02-04T05:51:03.568Z</published>
     <updated>2024-02-04T05:51:03.568Z</updated>
     
