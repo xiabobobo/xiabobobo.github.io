@@ -46,7 +46,10 @@
 <p><img src="/2024/02/04/Hello-World-0/4.png" alt="4"></p>
 <p> 我已经成为尸体了</p>
 <ul>
-<li><a href="https://juejin.cn/post/6921750181297782798">https://juejin.cn/post/6921750181297782798</a></li>
+<li><p><a href="https://juejin.cn/post/6921750181297782798">https://juejin.cn/post/6921750181297782798</a></p>
+</li>
+<li><p><a href="https://ultrafisher.github.io/2020/08/23/%E5%9C%A8Hexo%E4%B8%AD%E7%94%A8Markdown%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C%E6%88%96%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E4%BB%A5%E5%8F%8AGIF%E5%8A%A8%E5%9B%BE/">在Hexo中用Markdown添加网络或本地视频以及GIF动图 | UltraFisher</a></p>
+</li>
 </ul>
 ]]></content>
   </entry>
@@ -64,7 +67,7 @@
 <h3 id="time-2024-2-4-DAY1"><a href="#time-2024-2-4-DAY1" class="headerlink" title="time:2024.2.4 DAY1"></a>time:2024.2.4 DAY1</h3><ul>
 <li>从2024.1.21开始（以前听了12天），到今天2024.2.4都没听只是每天看薄荷阅读</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line">  &lt;iframe src=&quot;link&quot; </span><br><span class="line">          scrolling=&quot;no&quot; </span><br><span class="line">          border=&quot;0&quot; </span><br><span class="line">          frameborder=&quot;no&quot; </span><br><span class="line">          framespacing=&quot;0&quot; </span><br><span class="line">          allowfullscreen=&quot;true&quot;&gt; </span><br><span class="line">  &lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
   <iframe src="https://www.youtube.com/embed/VmSvIaXz7UU" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
