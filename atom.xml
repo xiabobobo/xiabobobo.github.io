@@ -6,7 +6,7 @@
   <link href="https://xiabobobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiabobobo.github.io/"/>
-  <updated>2024-02-04T09:25:10.937Z</updated>
+  <updated>2024-02-04T10:11:04.495Z</updated>
   <id>https://xiabobobo.github.io/</id>
   
   <author>
@@ -17,21 +17,117 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>1</title>
+    <link href="https://xiabobobo.github.io/2024/02/04/1/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/1/</id>
+    <published>2024-02-04T10:11:04.000Z</published>
+    <updated>2024-02-04T10:11:04.495Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>n</title>
+    <link href="https://xiabobobo.github.io/2024/02/04/n/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/n/</id>
+    <published>2024-02-04T10:07:27.000Z</published>
+    <updated>2024-02-04T10:09:12.920Z</updated>
+    
+    <content type="html"><![CDATA[<p>！<a href="./n/1.png"></a><img src="/2024/02/04/n/1.png" alt="1"></p><p><img src="/2024/02/04/n/1.png" alt="1"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;！&lt;a href=&quot;./n/1.png&quot;&gt;&lt;/a&gt;&lt;img src=&quot;/2024/02/04/n/1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2024/02/04/n/1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>my</title>
+    <link href="https://xiabobobo.github.io/2024/02/04/my/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/my/</id>
+    <published>2024-02-04T09:39:57.000Z</published>
+    <updated>2024-02-04T09:46:25.003Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2024/02/04/my/1.png" alt="1"></p><p><img src="/2024/02/04/my/D:%5Cblog%5Csource%5C_posts%5Cmy%5C1.png" alt="1"></p><p>![图片描述](<a href="https://img-blog.csdnimg.cn/20210711160058889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_a">https://img-blog.csdnimg.cn/20210711160058889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_a</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2024/02/04/my/1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2024/02/04/my/D:%5Cblog%5Csource%5C_posts%5Cmy%5C1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;![图片描述</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>new</title>
     <link href="https://xiabobobo.github.io/2024/02/04/new/"/>
     <id>https://xiabobobo.github.io/2024/02/04/new/</id>
     <published>2024-02-04T08:48:26.000Z</published>
-    <updated>2024-02-04T09:25:10.937Z</updated>
+    <updated>2024-02-04T09:53:39.968Z</updated>
     
-    <content type="html"><![CDATA[<p>​    </p><p><img src="/xiaowang.site/xiaowang.site/2024/02/04/new/new/aaa.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>​    </p><p><img src="/2024/02/04/new/aaa.png"></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;​    &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/xiaowang.site/xiaowang.site/2024/02/04/new/new/aaa.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2024/02/04/new/aaa.png&quot;&gt;&lt;/p&gt;
 </summary>
       
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>site</title>
+    <link href="https://xiabobobo.github.io/2024/02/04/site/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/site/</id>
+    <published>2024-02-04T08:21:57.000Z</published>
+    <updated>2024-02-04T08:21:57.039Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://xiabobobo.github.io/2024/02/04/hello/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/hello/</id>
+    <published>2024-02-04T08:00:15.360Z</published>
+    <updated>2024-02-04T08:00:31.790Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hello_world</title>
+    <link href="https://xiabobobo.github.io/2024/02/04/hello-world-1/"/>
+    <id>https://xiabobobo.github.io/2024/02/04/hello-world-1/</id>
+    <published>2024-02-04T07:58:55.000Z</published>
+    <updated>2024-02-04T07:58:55.960Z</updated>
+    
     
     
     
