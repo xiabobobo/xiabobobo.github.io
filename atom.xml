@@ -34,8 +34,12 @@
     <link href="https://xiabobobo.github.io/2024/02/17/cs-crash-course/"/>
     <id>https://xiabobobo.github.io/2024/02/17/cs-crash-course/</id>
     <published>2024-02-17T13:42:32.000Z</published>
-    <updated>2024-02-17T13:42:32.609Z</updated>
+    <updated>2024-02-29T12:31:47.847Z</updated>
     
+    <content type="html"><![CDATA[<p><a href="https://shimo.im/docs/PJAUY30F1uYksv0h/read">公开分享版本【计算机科学速成课】 笔记 (shimo.im)</a></p><span id="more"></span><h2 id="Lesson1：计算机早期历史"><a href="#Lesson1：计算机早期历史" class="headerlink" title="Lesson1：计算机早期历史"></a>Lesson1：计算机早期历史</h2><p><strong>课程目标：</strong> 从高层次总览一系列计算机话题，快速入门计算机科学。</p><ol><li><p><strong>计算机技术的影响</strong>(至少是第三遍听这节课了2024.2.29)</p><ul><li>进入信息时代出现自动化农业设备与医疗设备</li><li>全球通信和全球教育机会变得普遍</li><li>出现意想不到的虚拟现实&#x2F;无人驾驶&#x2F;人工智能等新领域</li></ul></li><li><p><strong>计算机的实质</strong></p><ul><li>极其简单的组件，通过一层层的抽象，来做出复杂的操作。</li><li>计算机中的很多东西，底层其实都很简单，让人难以理解的，是一层层精妙的抽象。像一个越来越小的俄罗斯套娃。</li></ul></li><li><p><strong>关于计算的历史</strong></p><ul><li>公元前 2500 年，算盘出现，为十进制，功能类似一个计数器。</li><li>公元前 2500 年-公元 1500 年：星盘、计算尺等依靠机械运动的计算设备出现。</li><li>公元 1613 年：computer 的概念出现，当时指的是专门做计算的职业。</li><li>1694 年：步进计算器出现，是世界上第一台能自动完成加减乘除的计算器。</li><li>1694-1900 年：计算表兴起，类似于字典，可用于查找各种庞大的计算值。</li><li>1823 年：差分机的设想出现，可以做函数计算，但计划最后失败。</li><li>19 世纪中期：分析机的设想出现，设想存在可计算一切的通用计算机。</li><li>1890 年：打孔卡片制表机。原理：在纸上打孔→孔穿过针→针泡入汞→电路连通→齿轮使计数+1。</li></ul></li></ol><p><img src="/2024/02/17/cs-crash-course/1.png"></p><h3 id="第二课：电子计算机的发展史"><a href="#第二课：电子计算机的发展史" class="headerlink" title="第二课：电子计算机的发展史"></a>第二课：电子计算机的发展史</h3><ol><li><strong>电子计算机元器件变化：</strong><ul><li>继电器 → 真空管 → 晶体管</li></ul></li><li><strong>计算机的出现背景：</strong><ul><li>20世纪人口暴增，科学与工程进步迅速，航天计划成形。以上导致数据的复杂度急剧上升、计算量暴增，对于计算的自动化、高速有迫切的需求。</li></ul></li><li><strong>电子计算机的发展历程：</strong><ul><li><strong>1945年 哈佛马克 1：</strong> 使用继电器，利用电磁效应控制机械开关，缺点为有磨损和延迟。最早还因为有虫子飞进去导致故障，引申出 “bug” 的意思。</li><li><strong>1943年 巨人 1 号：</strong> 使用真空管（三极管），制造出世界上第一个可编程的计算机。</li><li><strong>1946年 ENIAC：</strong> 第一个电子通用数值积分计算机。</li><li><strong>1947年 晶体管出现：</strong> 使用固态的半导体材料，相对真空管更可靠。</li><li><strong>1950s 空军 ANFSQ-7：</strong> 真空管到达计算极限。</li><li><strong>1957年 IBM 608：</strong> 第一个消费者可购买的晶体管计算机出现。</li></ul></li></ol><p><img src="/2024/02/17/cs-crash-course/2.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://shimo.im/docs/PJAUY30F1uYksv0h/read&quot;&gt;公开分享版本【计算机科学速成课】 笔记 (shimo.im)&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
