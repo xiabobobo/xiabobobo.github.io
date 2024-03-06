@@ -744,6 +744,217 @@
 </li>
 </ol>
 <p><img src="/2024/02/17/cs-crash-course/2.png"></p>
+<h2 id="第三课：布尔逻辑与逻辑门（2024-3-6）"><a href="#第三课：布尔逻辑与逻辑门（2024-3-6）" class="headerlink" title="第三课：布尔逻辑与逻辑门（2024.3.6）"></a>第三课：布尔逻辑与逻辑门（2024.3.6）</h2><ol>
+<li><p><strong>计算机为什么使用二进制：</strong></p>
+<ul>
+<li>计算机的元器件晶体管只有 2 种状态，通电（1）和断电（0），用二进制可直接根据元器件的状态来设计计算机。</li>
+<li>数学中的“布尔代数”分支，可以用 True 和 False（可用 1 代表 True，0 代表 False）进行逻辑运算，代替实数进行计算。计算的状态越多，信号越容易混淆，影响计算。对于当时每秒运算百万次以上的晶体管，信号混淆是特别让人头疼的。</li>
+</ul>
+</li>
+<li><p><strong>布尔代数与布尔代数在计算机中的实现变量：</strong></p>
+<ul>
+<li>没有常数，仅 True 和 False 这两个变量。</li>
+<li>三个基本操作：NOT&#x2F;AND&#x2F;OR。</li>
+<li>为什么称之为“门”：控制电流流过的路径<ol>
+<li><strong>NOT 操作：</strong><ul>
+<li>命名：称为 NOT 门&#x2F;非门。</li>
+<li>作用：将输入布尔值反转。输入的 True 或 False，输出为 False 或 True。</li>
+<li>晶体管的实现方式：半导体通电 True，则线路接地，无输出电流，为 False。半导体不通电 False，则输出电流从右边输出，为 True。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2024/02/17/cs-crash-course/3.png"></p>
+<ol start="2">
+<li><strong>AND 操作：</strong><ul>
+<li>命名：AND 门&#x2F;与门</li>
+<li>作用：由 2 个输入控制输出，仅当 2 个输入 input1 和 input2 都为 True 时，输出才为 True。对于 2 个输入的其余情况，输出均为 False。</li>
+<li>*可以理解为，2 句话（输入）完全没有假的，整件事（输出）才是真的。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2024/02/17/cs-crash-course/5.png"></p>
+<p>​       <strong>用晶体管实现的方式：</strong></p>
+<ul>
+<li>串联两个晶体管，仅当 2 个晶体管都通电时，输出才有电流（True）。</li>
+</ul>
+<p><img src="/2024/02/17/cs-crash-course/6.png"></p>
+<p>3).<strong>OR 操作：</strong></p>
+<ul>
+<li>命名：OR 门&#x2F;或门</li>
+<li>作用：由 2 个输入控制输出，只要其中一个输入为 True，则输出 True。</li>
+</ul>
+<p><img src="/2024/02/17/cs-crash-course/image.png"></p>
+<ul>
+<li>用晶体管实现的方式：</li>
+</ul>
+<p>使用 2 个晶体管，将它们并联到电路中，只要有一个晶体管通电，则输出有电流（True）。</p>
+<p>![](.&#x2F;cs-crash-course&#x2F;image (1).png)</p>
+<ol start="3">
+<li><strong>特殊的逻辑运算——异或：</strong><ul>
+<li>命名：XOR 门&#x2F;异或门</li>
+<li>作用：2 个输入控制一个输出。当 2 个输入均为 True 时，输出 False，其余情况与 OR 门相同。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2024/02/17/cs-crash-course/7.png"></p>
+<p>3 图示：</p>
+<p>先用一个 OR 门，将其与 AND 门并联，AND 门与 NOT 门串联，最后让 NOT 与 AND 门并联，获得输出。</p>
+<p><img src="/2024/02/17/cs-crash-course/8.png"></p>
+<p>4.<strong>逻辑门的符号表示：</strong></p>
+<ul>
+<li><p>作用：将逻辑门简化，用于构建更大的组件，以避免复杂性。</p>
+</li>
+<li><p>图示：</p>
+<p><img src="/2024/02/17/cs-crash-course/4.png"></p>
+<ul>
+<li>非门：用三角形+圆圈表示</li>
+<li>与门：用 D 型图案表示</li>
+<li>或门：用类似 D 向右弯曲的图案表示</li>
+<li>异或门：用或门+一个圆弧表示</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><strong>抽象的好处：</strong><ul>
+<li>抽象使得分工明确，不同职业的工程师可以各司其职，而不用担心其他细节。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第四课：二进制（2024-3-6）"><a href="#第四课：二进制（2024-3-6）" class="headerlink" title="第四课：二进制（2024.3.6）"></a>第四课：二进制（2024.3.6）</h2><ol>
+<li><p><strong>二进制的原理，存储单元 MB&#x2F;GB&#x2F;TB 解释：</strong></p>
+<ul>
+<li><strong>计算机中的二进制表示：</strong> 单个数字 1 或 0，1 位二进制数字命名为位(bit)，也称 1 比特。1 字节（byte）的概念：1byte&#x3D;8bit，即 1byte 代表 8 位数字。最早期的电脑为八位的，即以八位为单位处理数据。为了方便，将八位数字命名为 1 字节（1byte）。</li>
+<li><strong>十进制与二进制的区别：</strong> 十进制有 10 个数字，0-9，逢 10 进 1（不存在 10 这个数字），则每向左进一位，数字大 10 倍。二进制有 2 个数字，0-1，逢 2 进 1（不存在 2 这个数字），则每向左进一位，数字大 2 倍。</li>
+<li><strong>如何进行二进制与十进制联系起来：</strong> 将十进制与二进制的位数提取出来，编上单位：eg.二进制的 1011&#x3D;1<em>2^0 + 1</em>2^1 + 0<em>2^2 + 1</em>2^3&#x3D; 11（从右往左数）eg.十进制的 1045&#x3D; 1<em>10^3 + 0</em>10^2 + 4<em>10^1 + 5</em>10^0。</li>
+<li><strong>十进制与二进制的图示：</strong> 十进制的 263，二进制的 10110111。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2024/02/17/cs-crash-course/4-1.png"></p>
+<p>   <img src="/2024/02/17/cs-crash-course/4-2.png"></p>
+<ul>
+<li><strong>二进制的运算：</strong> 相同的位数相加，逢 2 进 1。</li>
+</ul>
+<p>   <img src="/2024/02/17/cs-crash-course/4-3.png"></p>
+<ul>
+<li><strong>byte 在电脑中的单位换算：</strong> 1kb&#x3D;2^10bit &#x3D; 1024byte &#x3D;1000b，</li>
+<li>1TB&#x3D;1000GB，</li>
+<li>1GB&#x3D;十亿字节&#x3D;1000MB&#x3D;10^6KB。</li>
+</ul>
+<ol start="2">
+<li><p><strong>32 位与 64 位电脑的区别：</strong></p>
+<ul>
+<li>32 位的最大数为 43 亿左右，32 位能表示的数字：0——2的32次方-1，一共2的32次方个数。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>64 位的最大数为 9.2*10^18。</li>
+</ul>
+<ol start="3">
+<li><p><strong>正数、负数、浮点数的表示：</strong></p>
+<ul>
+<li><strong>计算机中表示数字的方法：</strong><ol>
+<li><strong>整数：</strong> 表示方法：第 1 位表示正负（1 是负，0 是正，补码），其余 31 位&#x2F;63 位表示实数。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>浮点数（Floating Point Numbers）：</strong> 定义：小数点可在数字间浮动的数（非整数）。表示方法：IEEE 754 标准下用类似科学计数法的方式，存储十进制数值。浮点数&#x3D;有效位数<em>指数。32 位数字中：第 1 位表示正负，第 2-9 位存指数，剩下 23 位存有效位数。eg.625.9&#x3D;0.6259（有效位数）</em>10^3（指数）。</p>
+</li>
+<li><p><strong>美国信息交换标准代码-ASCII：</strong></p>
+<ul>
+<li><strong>全称：</strong> 美国信息交换标准代码。</li>
+<li><strong>作用：</strong> 用数字给英文字母及符号编号。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><p><strong>内容：</strong> 7 位代码，可存放 128 个不同的值。</p>
+<p> <img src="/2024/02/17/cs-crash-course/4-4.png"></p>
+</li>
+</ul>
+<ol start="5">
+<li><p><strong>UNICODE：</strong></p>
+<ul>
+<li><strong>诞生背景：</strong> 1992 诞生，随着计算机在亚洲兴起，需要解决 ASCII 不够表达所有语言的问题。为提高代码的互用性，而诞生的编码标准。</li>
+<li><strong>内容：</strong> UNICODE 为 17 组的 16 位数字，有超过 100 万个位置，可满足所有语言的字符需求。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第五课：算术逻辑单元（2024-3-6）"><a href="#第五课：算术逻辑单元（2024-3-6）" class="headerlink" title="第五课：算术逻辑单元（2024.3.6）"></a>第五课：算术逻辑单元（2024.3.6）</h2><ol>
+<li><p><strong>什么是算术逻辑单元：</strong></p>
+<ul>
+<li><strong>命名：</strong> 简称 ALU，Arithmetic &amp; Logic Unit。</li>
+<li><strong>组成：</strong> ALU 有 2 个单元，1 个算术单元和 1 个逻辑单元（Arithmetic Unit 和 Logic Unit）。</li>
+<li><strong>作用：</strong> 计算机中负责运算的组件，处理数字&#x2F;逻辑运算的最基本单元。</li>
+</ul>
+</li>
+<li><p><strong>算术单元：</strong></p>
+<ul>
+<li><p><strong>基本组件：</strong> 由半加器、全加器组成。半加器、全加器由 AND、OR、NOT、XOR 门组成。</p>
+</li>
+<li><p><strong>加法运算：</strong></p>
+<ul>
+<li><strong>组件：</strong> AND、OR、NOT、XOR 门。</li>
+<li><strong>元素：</strong> 输入 A，输入 B，输出（均为 1 个 bit，即 0 或 1）。</li>
+<li><strong>半加器：</strong> 用于计算个位的数字加减。输入：A，B，输出：总和，进位。抽象：sum:总和，carry：进位。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>  <img src="/2024/02/17/cs-crash-course/5-1.png"></p>
+<pre><code> * 抽象：
+ 
+ ![](./cs-crash-course/5-2.png)
+ 
+ - **全加器：** 用于计算超过 1 位的加法（ex：1+1+1），由于涉及进位，因此有 3 个输入（C 充当进位）。原理图示。
+ 
+ ![](./cs-crash-course/5-3.png)
+ 
+ ![](./cs-crash-course/5-4.png)
+ 
+ 3）**如何用半加器与全加器做 8 位数的加法：**
+</code></pre>
+<ol>
+<li>以 8 位行波加法器为例。</li>
+<li>用半加器处理第 1 位数（个位）的加法，</li>
+<li>得到的和为结果的第 1 位。将输出的进位，</li>
+<li>输入到第 2 位用的全加器的输入 C 中。在第 3-8 位上，循环操作。</li>
+<li>*现在电脑使用的加法器叫“<strong>超前进位加法器</strong>”</li>
+</ol>
+<p>   <img src="/2024/02/17/cs-crash-course/5-5.png"></p>
+<p>   4）算术单元支持的其他运算</p>
+<p>   <img src="/2024/02/17/cs-crash-course/5-6.png"></p>
+<ol start="3">
+<li><p><strong>溢出的概念：</strong></p>
+<ul>
+<li><strong>内容：</strong> 在有限的空间内，无法存储位数过大的数，则称为溢出。</li>
+<li><strong>说明：</strong> 第 8 位的进位如果为 1，则无法存储，此时容易引发错误，应尽量避免溢出。</li>
+</ul>
+</li>
+<li><p><strong>逻辑单元：</strong></p>
+<ul>
+<li><strong>作用：</strong> 执行逻辑操作，如 NOT、AND、OR 等操作，以及做简单的数值测试。</li>
+</ul>
+</li>
+<li><p><strong>ALU 的抽象：</strong></p>
+<ul>
+<li><strong>作用：</strong> ALU 的抽象让工程师不再考虑逻辑门层面的组成，简化工作。</li>
+<li><strong>图示：</strong> 像一个大“V”。</li>
+</ul>
+<p><img src="/2024/02/17/cs-crash-course/5-7.png"></p>
+<ul>
+<li><strong>说明：</strong> 图示内容包括：输入 A，B，输出标志：溢出、零、负数。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2024/02/17/cs-crash-course/5-8.png"></p>
 ]]></content>
   </entry>
   <entry>
