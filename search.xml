@@ -252,8 +252,8 @@
 </ul>
 <hr>
 <h3 id="2024-2-19-day9-actually-day7"><a href="#2024-2-19-day9-actually-day7" class="headerlink" title="2024.2.19 day9 (actually day7)"></a>2024.2.19 day9 (actually day7)</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">   <iframe src="https://www.youtube.com/embed/50GPg5PfLJg" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">    </iframe> </div>
+**Key words and phrases:**
 
-<p><strong>Key words and phrases:</strong></p>
 <p>🔎 <strong>implant</strong> - something placed inside your body</p>
 <ul>
 <li>The cochlear implants allowed her to hear again.</li>
@@ -271,8 +271,8 @@
 </ul>
 <hr>
 <h3 id="2024-2-19-day10-actually-day8"><a href="#2024-2-19-day10-actually-day8" class="headerlink" title="2024.2.19 day10 (actually day8)"></a>2024.2.19 day10 (actually day8)</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">   <iframe src="https://www.youtube.com/embed/xlQ7sjbC_Ps" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false">    </iframe> </div>
+**Key words and phrases:**
 
-<p><strong>Key words and phrases:</strong></p>
 <p>🔎 <strong>looms</strong> - something worrying is coming soon</p>
 <ul>
 <li>The team is working hard to finish the project as the deadline looms.</li>
@@ -393,7 +393,15 @@
 <li>His mum poured cold water on the idea of having a house party.</li>
 <li>You can’t cheat! I’m pouring cold water on that immediately.</li>
 </ul>
-]]></content>
+<h3 id="2024-3-7-day17"><a href="#2024-3-7-day17" class="headerlink" title="2024.3.7 day17"></a>2024.3.7 day17</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+  <iframe src="https://www.youtube.com/embed/4NpGN__g-Ng" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+  </iframe>
+</div>
+
+<p>🔎 enshrines - protects in law<br>• The right to free speech has been enshrined in the country’s constitution.<br>• The idea that education should be free has now been enshrined in law.</p>
+<p>🔎 lament - express sadness<br>• Health campaigners lamented the increase in junk food advertising.<br>• The manager lamented the team’s missed chances.</p>
+<p>🔎 follow its lead - go in the same direction<br>• We just found a successful company and followed its lead.<br>• Dancing is easy. Just follow my lead</p>
+<h3 id="2024-3-8-day18"><a href="#2024-3-8-day18" class="headerlink" title="2024.3.8 day18"></a>2024.3.8 day18</h3>]]></content>
   </entry>
   <entry>
     <title>fisrt_blog</title>
@@ -510,6 +518,7 @@
 <h3 id="2024-2-29-day6-我的天我没有记"><a href="#2024-2-29-day6-我的天我没有记" class="headerlink" title="2024.2.29 day6 (我的天我没有记)"></a>2024.2.29 day6 (我的天我没有记)</h3><p><img src="/2024/02/04/to-be-a-officer/2-6-1.png"></p>
 <p><img src="/2024/02/04/to-be-a-officer/2-6-2.png"></p>
 <p><img src="/2024/02/04/to-be-a-officer/2-6-3.png"></p>
+<h3 id="2024-3-6"><a href="#2024-3-6" class="headerlink" title="2024.3.6"></a>2024.3.6</h3><p><img src="/2024/02/04/to-be-a-officer/2-8-2.png"></p>
 ]]></content>
       <tags>
         <tag>学习记录</tag>
@@ -1113,7 +1122,7 @@
 <p>计算机指令长度在早期每个字仅有 8 位的情况下，指令只占用 4 位，这意味着只能有 16 个指令，这显然是不够的。</p>
 <p>最直接的是用<strong>更多位来表示指令</strong>，如 32 位或 64 位。现代计算机通过两种方式解决指令数量不足的问题：一种是增加指令长度，如采用 32 位或 64 位的指令；另一种是采用“**可变指令长度 **”，使得不同指令的长度不同，以节约位数。例如，</p>
 <p>假设一个字有 16 位，如果某些指令不需要操作内存，则可以省略寻址位数。在这种情况下，部分指令可能需要跟随立即值，例如 JUMP 指令。</p>
-<h2 id="第九课-高级-CPU-设计"><a href="#第九课-高级-CPU-设计" class="headerlink" title="第九课 高级 CPU 设计"></a>第九课 高级 CPU 设计</h2><h2 id="0、概念梳理"><a href="#0、概念梳理" class="headerlink" title="0、概念梳理"></a>0、概念梳理</h2><ul>
+<h2 id="第九课-高级-CPU-设计"><a href="#第九课-高级-CPU-设计" class="headerlink" title="第九课 高级 CPU 设计"></a>第九课 高级 CPU 设计</h2><h3 id="0、概念梳理"><a href="#0、概念梳理" class="headerlink" title="0、概念梳理"></a>0、概念梳理</h3><ul>
 <li><p>缓存：在 CPU 中的小块 RAM，用于存储批量指令。</p>
 </li>
 <li><p>缓存命中：想要的数据已经在缓存里</p>
@@ -1184,6 +1193,18 @@
 <h3 id="2、大O表示法"><a href="#2、大O表示法" class="headerlink" title="2、大O表示法"></a>2、大O表示法</h3><p>大O表示法（算法）的复杂度：算法的输入大小和运行步骤之间的关系，来表示运行速度的量级</p>
 <h3 id="3、归并排序"><a href="#3、归并排序" class="headerlink" title="3、归并排序"></a>3、归并排序</h3><p>归并排序的算法复杂度为O（n*log n），n是需要比较+合并的次数，和数组大小成正比，log n是合并步骤所需要的的次数，归并排序比选择排序更有效率</p>
 <h3 id="4、Dijkstra算法"><a href="#4、Dijkstra算法" class="headerlink" title="4、Dijkstra算法"></a>4、Dijkstra算法</h3><p>一开始复杂度为O(n²)，后来复杂度为O（nlog n +I），在下图中，n表示节点数，I表示有多少条线。</p>
+<p><img src="/2024/02/17/cs-crash-course/13-1.png"></p>
+<h2 id="第十四集-数据结构"><a href="#第十四集-数据结构" class="headerlink" title="第十四集 数据结构"></a>第十四集 数据结构</h2><h3 id="1、数组-下标"><a href="#1、数组-下标" class="headerlink" title="1、数组 下标"></a>1、数组 下标</h3><p>数组（Array），也叫列表（list）或向量（Vector），是一种数据结构。为了拿出数组中某个值，我们要指定一个下标（index），大多数编程语言里，数组下标都从 0 开始，用方括号 [ ] 代表访问数组。注意：很容易混淆 “数组中第 5 个数” 和 “数组下标为 5 的数”，数组下标为5的数是数组里面的第6个数</p>
+<h3 id="2、字符串"><a href="#2、字符串" class="headerlink" title="2、字符串"></a>2、字符串</h3><p>即字母 数字 标点等组成的数组，字符串在内存里以0结尾。</p>
+<h3 id="3、矩阵"><a href="#3、矩阵" class="headerlink" title="3、矩阵"></a>3、矩阵</h3><p>可以把矩阵看成数组的数组</p>
+<h3 id="4、结构体"><a href="#4、结构体" class="headerlink" title="4、结构体"></a>4、结构体</h3><p> 把几个有关系的变量存在一起叫做结构体</p>
+<h3 id="5、指针"><a href="#5、指针" class="headerlink" title="5、指针"></a>5、指针</h3><p>指针是一种特殊变量，指向一个内存地址，因此得名。</p>
+<h3 id="6、节点"><a href="#6、节点" class="headerlink" title="6、节点"></a>6、节点</h3><p>以指针为变量的结构体叫节点</p>
+<h3 id="7、链表"><a href="#7、链表" class="headerlink" title="7、链表"></a>7、链表</h3><p>用节点可以做链表，链表是一种灵活数据结构，能存很多个 节点 (node)，灵活性是通过每个节点 指向 下一个节点实现的。链表可以是循环的也可以是非循环的，非循环的最后一个指针是0</p>
+<h3 id="8、队列"><a href="#8、队列" class="headerlink" title="8、队列"></a>8、队列</h3><p>“队列” 就像邮局排队，谁先来就排前面，这叫 先进先出（FIFO——first in first out），可以把”栈”想成一堆松饼,做好一个新松饼，就堆在之前上面,吃的时候，是从最上面开始</p>
+<h3 id="9、栈"><a href="#9、栈" class="headerlink" title="9、栈"></a>9、栈</h3><p>栈是后进先出(LIFO)</p>
+<h3 id="10、树"><a href="#10、树" class="headerlink" title="10、树"></a>10、树</h3><p><img src="/2024/02/17/cs-crash-course/14-1.png"></p>
+<h3 id="11、图"><a href="#11、图" class="headerlink" title="11、图"></a>11、图</h3><p>如果数据随意连接，有循环，我们称之为图，如下图</p>
 <p><img src="/2024/02/17/cs-crash-course/13-1.png"></p>
 ]]></content>
   </entry>
