@@ -393,7 +393,7 @@
 <li>His mum poured cold water on the idea of having a house party.</li>
 <li>You can’t cheat! I’m pouring cold water on that immediately.</li>
 </ul>
-<h3 id="2024-3-7-day17"><a href="#2024-3-7-day17" class="headerlink" title="2024.3.7 day17"></a>2024.3.7 day17</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<h3 id="2024-3-7-day17"><a href="#2024-3-7-day17" class="headerlink" title="2024.3.7 day17"></a>2024.3.7 day17</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
   <iframe src="https://www.youtube.com/embed/4NpGN__g-Ng" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
   </iframe>
 </div>
@@ -1206,6 +1206,128 @@
 <h3 id="10、树"><a href="#10、树" class="headerlink" title="10、树"></a>10、树</h3><p><img src="/2024/02/17/cs-crash-course/14-1.png"></p>
 <h3 id="11、图"><a href="#11、图" class="headerlink" title="11、图"></a>11、图</h3><p>如果数据随意连接，有循环，我们称之为图，如下图</p>
 <p><img src="/2024/02/17/cs-crash-course/13-1.png"></p>
+<h2 id="第15课-阿兰图灵"><a href="#第15课-阿兰图灵" class="headerlink" title="第15课 阿兰图灵"></a>第15课 阿兰图灵</h2><h3 id="0-可判定性问题"><a href="#0-可判定性问题" class="headerlink" title="0.可判定性问题"></a>0.可判定性问题</h3><p>是否存在一种算法，输入正式逻辑语句 输出准确的”是”或”否”答案？</p>
+<ol>
+<li><h3 id="阿隆佐邱奇，Lambda算子"><a href="#阿隆佐邱奇，Lambda算子" class="headerlink" title="阿隆佐邱奇，Lambda算子"></a>阿隆佐邱奇，Lambda算子</h3></li>
+</ol>
+<p>美国数学家 阿隆佐·丘奇，开发了一个叫”Lambda 算子”的数学表达系统，证明其不存在。</p>
+<ol>
+<li><h3 id="图灵机"><a href="#图灵机" class="headerlink" title="图灵机"></a>图灵机</h3></li>
+</ol>
+<p>只要有足够的规则，状态和纸带，图灵机可以解决一切<strong>计算</strong>问题。和图灵机一样完备，叫做图灵完备。</p>
+<ol>
+<li><h3 id="停机问题"><a href="#停机问题" class="headerlink" title="停机问题"></a>停机问题</h3></li>
+</ol>
+<p>证明图灵机不能解决所有问题。</p>
+<ol>
+<li><h3 id="图灵测试"><a href="#图灵测试" class="headerlink" title="图灵测试"></a>图灵测试</h3></li>
+</ol>
+<p>向人和机器同时发信息，收到的回答无法判断哪个是人，哪个是计算机，则计算机达到了智能程度。</p>
+<h2 id="第16课-软件工程"><a href="#第16课-软件工程" class="headerlink" title="第16课 软件工程"></a>第16课 软件工程</h2><h3 id="1、对象"><a href="#1、对象" class="headerlink" title="1、对象"></a>1、对象</h3><p>当任务庞大，函数太多，我们需要把函数打包成层级，把相关代码都放一起，打包成<strong>对象</strong>。对象可以包括其他对象，函数和变量。把函数打包成对象的思想叫做“面向对象编程”，面向对象的核心是隐藏复杂度，选择性的公布功能。</p>
+<h3 id="3、API"><a href="#3、API" class="headerlink" title="3、API"></a>3、API</h3><p>当团队接收到子团队编写的对象时，需要文档和程序编程接口（API）来帮助合作。API控制哪些函数和数据让外部访问，哪些仅供内部。</p>
+<h3 id="4、集成开发环境（IDE）"><a href="#4、集成开发环境（IDE）" class="headerlink" title="4、集成开发环境（IDE）"></a>4、集成开发环境（IDE）</h3><p>程序员用来专门写代码的工具</p>
+<h3 id="6、调试（debug）"><a href="#6、调试（debug）" class="headerlink" title="6、调试（debug）"></a>6、调试（debug）</h3><p>IDE帮你检查错误，并提供信息，帮你解决问题，这个过程叫调试</p>
+<h3 id="7、文档与注释"><a href="#7、文档与注释" class="headerlink" title="7、文档与注释"></a>7、文档与注释</h3><p>文档一般放在一个叫做README的文件里，文档也可以直接写成“注释”，放在源代码里，注释是标记过的一段文字，编译代码时，注释会被忽略。注释的唯一作用是帮助开发者理解代码。</p>
+<h3 id="8、版本控制"><a href="#8、版本控制" class="headerlink" title="8、版本控制"></a>8、版本控制</h3><p>版本控制，又称源代码管理。大型软件公司会把会把代码放到一个中心服务器上，叫”代码仓库”，程序员可以把想修改的代码借出，修改后再提交回代码仓库。版本控制可以跟踪所有变化，如果发现bug，全部或部分代码，可以”回滚”到之前的稳定版。</p>
+<h3 id="9、质量控制"><a href="#9、质量控制" class="headerlink" title="9、质量控制"></a>9、质量控制</h3><p>测试可以统称“质量保证测试”（QA），作用是找bug</p>
+<h3 id="10、beta-alpha"><a href="#10、beta-alpha" class="headerlink" title="10、beta alpha"></a>10、beta alpha</h3><p>beta版软件，即是软件接近完成，但没有完全被测试过，公司有时会向公众发布beta版，以帮助发现问题。alpha是beta前的版本，一般很粗糙，只在内部测试</p>
+<h2 id="第17课-集成电路与摩尔定律（硬件的发展）"><a href="#第17课-集成电路与摩尔定律（硬件的发展）" class="headerlink" title="第17课 集成电路与摩尔定律（硬件的发展）"></a>第17课 集成电路与摩尔定律（硬件的发展）</h2><ul>
+<li><h3 id="分立元件与数字暴政"><a href="#分立元件与数字暴政" class="headerlink" title="分立元件与数字暴政"></a>分立元件与数字暴政</h3></li>
+</ul>
+<p>一开始，计算机都有独立组件构成，叫**”分立元件”** ， 然后不同组件再用线连在一起，这会导致计算机的构成很复杂，这个问题叫做<strong>数字暴政</strong>。</p>
+<ul>
+<li><h3 id="集成电路与仙童半导体"><a href="#集成电路与仙童半导体" class="headerlink" title="集成电路与仙童半导体"></a>集成电路与仙童半导体</h3></li>
+</ul>
+<p>封装复杂性：与其把多个独立部件用电线连起来，拼装出计算机，不如把多个组件包在一起，变成一个新的独立组件。这种新的独立组件就叫集成电路（IC），仙童半导体（用硅做成）让集成电路变成了现实。为了不用焊接或用一大堆线，发明了印刷电路板（PCB），他通过蚀刻金属线的方式把零件连接到一起</p>
+<ul>
+<li><h3 id="光刻0421"><a href="#光刻0421" class="headerlink" title="光刻0421"></a>光刻0421</h3></li>
+</ul>
+<p>即用光把复杂图案印到材料上。我们把一片薄片状的硅叫做<strong>晶圆</strong>，通过一系列生产步骤，将晶圆表面薄膜的特定部分除去的工艺叫做<strong>光刻</strong>。</p>
+<p><img src="/2024/02/17/cs-crash-course/17-1.png"></p>
+<p>​                                                                      光刻组件示意图</p>
+<p><img src="/2024/02/17/cs-crash-course/17-2.png"></p>
+<p>​                                                                   光刻成品示意图</p>
+<ul>
+<li><h3 id="摩尔定律"><a href="#摩尔定律" class="headerlink" title="摩尔定律"></a>摩尔定律</h3></li>
+</ul>
+<p>每两年左右，得益于材料和制造技术的发展 ，同样大小的空间，能塞进两倍数量的晶体管。</p>
+<ol>
+<li>进一步小型化会碰到的问题</li>
+</ol>
+<p>1、由于光的波长限制，精度已到极限。</p>
+<p>2、量子隧穿效应：当晶体管非常小，电极之间可能只距离几个原子，电子会跳过间隙，会产生漏电问题</p>
+<h2 id="第18课-操作系统"><a href="#第18课-操作系统" class="headerlink" title="第18课 操作系统"></a>第18课 操作系统</h2><ul>
+<li><h3 id="操作系统-OS"><a href="#操作系统-OS" class="headerlink" title="操作系统(OS)"></a>操作系统(OS)</h3></li>
+</ul>
+<p>操作系统也是一种程序，不过它有操作硬件的特殊权限，可以运行和管理其他程序。</p>
+<ul>
+<li><h3 id="批处理"><a href="#批处理" class="headerlink" title="批处理"></a>批处理</h3></li>
+</ul>
+<p>一个程序运行后会自动运行下一个程序。</p>
+<ul>
+<li><h3 id="外部设备"><a href="#外部设备" class="headerlink" title="外部设备"></a>外部设备</h3></li>
+</ul>
+<p>和计算机连着的其他设备，如打印机。</p>
+<ul>
+<li><h3 id="设备驱动程序"><a href="#设备驱动程序" class="headerlink" title="设备驱动程序"></a>设备驱动程序</h3></li>
+</ul>
+<p>为了使所写程序和不同类型的电脑兼容，我们需要操作系统充当软件和硬件之间的媒介，更具体地说，操作系统提供程序编程接口(API)来抽象硬件,叫“设备驱动程序”。程序员可以用标准化机制，和输入输出硬件（I&#x2F;O）交互，</p>
+<ul>
+<li><h3 id="多任务处理"><a href="#多任务处理" class="headerlink" title="多任务处理"></a>多任务处理</h3></li>
+</ul>
+<p>操作系统能使多个程序在单个CPU上同时进行的能力，叫做“多任务处理”</p>
+<ul>
+<li><h3 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h3></li>
+</ul>
+<p>多程序处理带来了一个程序所占用内存可能不连续的问题，导致程序员难以追踪一个程序，为了解决这个问题操作系统会把内存地址虚拟化，这叫“虚拟内存”。</p>
+<ul>
+<li><h3 id="动态内存分配"><a href="#动态内存分配" class="headerlink" title="动态内存分配"></a>动态内存分配</h3></li>
+</ul>
+<p>虚拟内存的机制使程序的内存大小可以灵活增减，叫做“动态内存分配”，对程序来说，内存看上去是连续的。</p>
+<ul>
+<li><h3 id="内存保护"><a href="#内存保护" class="headerlink" title="内存保护"></a>内存保护</h3></li>
+</ul>
+<p>给每个程序分配单独的内存，那当这个程序出现混乱时，它不会影响到其他程序的内存，同时也能有效地防止恶意程序篡改其他程序，这叫做内存保护。</p>
+<ul>
+<li><h3 id="多用户分时操作系统（Multics）"><a href="#多用户分时操作系统（Multics）" class="headerlink" title="多用户分时操作系统（Multics）"></a>多用户分时操作系统（Multics）</h3></li>
+</ul>
+<p>用来处理多用户同时使用一台计算机的情况，即每个用户只能用一小部分处理器，内存等，</p>
+<ul>
+<li><h3 id="Unix"><a href="#Unix" class="headerlink" title="Unix"></a>Unix</h3></li>
+</ul>
+<p>把操作系统分成两个部分，一个是操作系统的核心部分，如内存管理，多任务和输入&#x2F;输出处理，这叫做“内核”，第二部分是一堆有用的工具，比如程序和运行库。</p>
+<h2 id="第19课-内存和储存介质（存储技术的发展）"><a href="#第19课-内存和储存介质（存储技术的发展）" class="headerlink" title="第19课 内存和储存介质（存储技术的发展）"></a>第19课 内存和储存介质（存储技术的发展）</h2><h3 id="纸卡-纸带"><a href="#纸卡-纸带" class="headerlink" title="纸卡 纸带"></a>纸卡 纸带</h3><p>问题：读取慢 难修改 难存临时值</p>
+<h3 id="延迟线存储器"><a href="#延迟线存储器" class="headerlink" title="延迟线存储器"></a>延迟线存储器</h3><p>利用线的延迟在线里存储数据，又叫顺序存储器或者循环存储器。</p>
+<p>存在问题：1 不能随意调出数据</p>
+<p>​                 2 难以增加内存密度</p>
+<h3 id="磁芯"><a href="#磁芯" class="headerlink" title="磁芯"></a>磁芯</h3><p>利用电磁感应原理</p>
+<p>问题 成本高</p>
+<h3 id="磁带"><a href="#磁带" class="headerlink" title="磁带"></a>磁带</h3><p>问题 访问速度慢</p>
+<h3 id="磁鼓"><a href="#磁鼓" class="headerlink" title="磁鼓"></a>磁鼓</h3><p>与磁带相似</p>
+<h3 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h3><p>与磁带相似</p>
+<h3 id="内存层次结构"><a href="#内存层次结构" class="headerlink" title="内存层次结构"></a>内存层次结构</h3><p>在计算机中，高速昂贵和低速便宜的内存混合使用以取得一个平衡</p>
+<h3 id="软盘"><a href="#软盘" class="headerlink" title="软盘"></a>软盘</h3><p>除了磁盘是软的，其他都和硬盘一样，好处是便携</p>
+<h3 id="光盘"><a href="#光盘" class="headerlink" title="光盘"></a>光盘</h3><p>原理：光盘表面有很多小坑，造成光的不同反射，光学传感器会捕获到，并解码为 1 和 0</p>
+<h3 id="固定硬盘（SSD）"><a href="#固定硬盘（SSD）" class="headerlink" title="固定硬盘（SSD）"></a>固定硬盘（SSD）</h3><p>里面是集成电路</p>
+<h2 id="第-20-课-文件系统-2024-3-10"><a href="#第-20-课-文件系统-2024-3-10" class="headerlink" title="第 20 课 文件系统 2024.3.10"></a>第 20 课 文件系统 2024.3.10</h2><h3 id="0-为什么要采用文件格式："><a href="#0-为什么要采用文件格式：" class="headerlink" title="0.为什么要采用文件格式："></a>0.为什么要采用文件格式：</h3><p>可以随便存文件数据，但按格式存会更方便</p>
+<ul>
+<li><h3 id="TXT-文本文件"><a href="#TXT-文本文件" class="headerlink" title="TXT 文本文件"></a>TXT 文本文件</h3><p>用ASCII解码</p>
+</li>
+<li><h3 id="WAV-音频文件"><a href="#WAV-音频文件" class="headerlink" title="WAV 音频文件"></a>WAV 音频文件</h3><p>记录的是振幅</p>
+</li>
+<li><h3 id="BMP-图片文件："><a href="#BMP-图片文件：" class="headerlink" title="BMP 图片文件："></a>BMP 图片文件：</h3><p>记录每个像素的红绿蓝 RGB 值</p>
+</li>
+<li><h3 id="目录文件："><a href="#目录文件：" class="headerlink" title="目录文件："></a>目录文件：</h3><p>用来解决多文件问题，存其他文件的信息，比如开头，结尾，创建时间等</p>
+</li>
+<li><h3 id="平面文件系统-Flat-File-System"><a href="#平面文件系统-Flat-File-System" class="headerlink" title="平面文件系统 - Flat File System"></a>平面文件系统 - Flat File System</h3><p>文件都在同一个层次，早期空间小，只有十几个文件，平面系统够用</p>
+<h4 id="解决文件紧密的排序造成的问题"><a href="#解决文件紧密的排序造成的问题" class="headerlink" title="解决文件紧密的排序造成的问题"></a>解决文件紧密的排序造成的问题</h4><p> \1. 把空间划分成一块块</p>
+<p> \2. 文件拆分存在多个块里</p>
+</li>
+<li><h3 id="碎片整理"><a href="#碎片整理" class="headerlink" title="碎片整理"></a>碎片整理</h3><p>文件的增删改查会不可避免的造成文件散落在各个块里，如果是磁带这样的存储介质就会造成          问题，所以需要碎片整理——计算机把文件内容调换位置</p>
+</li>
+<li><h3 id="分层文件系统-Hierarchical-File-System："><a href="#分层文件系统-Hierarchical-File-System：" class="headerlink" title="分层文件系统 - Hierarchical File System："></a>分层文件系统 - Hierarchical File System：</h3><p>有不同文件夹，文件夹可以层层嵌套</p>
+</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
