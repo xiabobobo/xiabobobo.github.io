@@ -1649,6 +1649,7 @@
 <h3 id="13-僵尸网络-Botnet"><a href="#13-僵尸网络-Botnet" class="headerlink" title="13.僵尸网络 Botnet"></a>13.僵尸网络 Botnet</h3><p>如果黑客掌握足够多电脑，那他们可以组成“僵尸网络”</p>
 <h2 id="第-33-集：加密"><a href="#第-33-集：加密" class="headerlink" title="第 33 集：加密"></a>第 33 集：加密</h2><h3 id="1-加密-Encryption，解密-Decryption"><a href="#1-加密-Encryption，解密-Decryption" class="headerlink" title="1. 加密 - Encryption，解密 - Decryption"></a>1. 加密 - Encryption，解密 - Decryption</h3><p>01:11 凯撒加密 Caesar cipher——一种替换加密  Substitution cipher，把字母替换成其他字母</p>
 <p><img src="/2024/02/17/cs-crash-course/33-1.png"></p>
+<p><img src="/2024/02/17/cs-crash-course/33-1.png"></p>
 <p>​                                       列移位加密 Columnar transposition cipher</p>
 <p>02:37 德国 Enigma 加密机 一种进阶的替换加密，每一次的映射都不同。</p>
 <p>04:54 1977年”数据加密标准” - Data Encryption Standard (DES)</p>
