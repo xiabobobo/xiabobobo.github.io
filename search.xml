@@ -1564,7 +1564,96 @@
 <h2 id="第-27-集：3D-图形"><a href="#第-27-集：3D-图形" class="headerlink" title="第 27 集：3D 图形"></a>第 27 集：3D 图形</h2><h3 id="1-线框渲染-Wireframe-Rendering"><a href="#1-线框渲染-Wireframe-Rendering" class="headerlink" title="1.线框渲染 Wireframe Rendering"></a>1.线框渲染 Wireframe Rendering</h3><p>有图形算法 负责把3D坐标”拍平”显示到2D屏幕上，这叫3D投影(包括正交投影和透视投影)，所有的点都从3D转成2D后，就可以用画2D线段的函数来连接这些点，这叫线框渲染，</p>
 <h3 id="2-网格-Mesh"><a href="#2-网格-Mesh" class="headerlink" title="2.网格 Mesh"></a>2.网格 Mesh</h3><p>如果我们需要画比立方体复杂的图形，三角形比线段更好，在3D图形学中我们叫三角形”多边形”(Polygons)，一堆多边形的集合叫 网格，网格越密，表面越光滑，细节越多，</p>
 <h3 id="3-三角形更常用因为能定义唯一的平面"><a href="#3-三角形更常用因为能定义唯一的平面" class="headerlink" title="3.三角形更常用因为能定义唯一的平面"></a>3.三角形更常用因为能定义唯一的平面</h3><h3 id="4-扫描线渲染-Scanline-Rendering——填充图形的经典算法"><a href="#4-扫描线渲染-Scanline-Rendering——填充图形的经典算法" class="headerlink" title="4. 扫描线渲染 Scanline Rendering——填充图形的经典算法"></a>4. 扫描线渲染 Scanline Rendering——填充图形的经典算法</h3><p>​          填充的速度叫做<strong>填充速率</strong></p>
-]]></content>
+<p><img src="/2024/02/17/cs-crash-course/27-1.png"></p>
+<p>​      <strong>抗锯齿</strong>——边缘羽化，如果像素在多边形内部，就直接涂颜色，如果多边形划过像素，颜色就浅一些</p>
+<hr>
+<p><img src="/2024/02/17/cs-crash-course/27-2.png"></p>
+<h3 id="5-遮挡-Occlusion"><a href="#5-遮挡-Occlusion" class="headerlink" title="5.遮挡 Occlusion"></a>5.遮挡 Occlusion</h3><p>用排序算法，从远到近排列，然后从远到近渲染，这叫<strong>画家算法</strong></p>
+<h3 id="6-深度缓冲-Z-Buffering"><a href="#6-深度缓冲-Z-Buffering" class="headerlink" title="6. 深度缓冲 Z Buffering"></a>6. 深度缓冲 Z Buffering</h3><p>另一种画遮挡的方法，简而言之，Z-buffering 算法会记录场景中每个像素和摄像机的距离，在内存里存一个数字矩阵，首先，每个像素的距离被初始化为”无限大”，然后 Z-buffering 从列表里第一个多边形开始处理，也就是A，它和扫描线算法逻辑相同，但不是给像素填充颜色，而是把多边形的距离和 Z-Buffer 里的距离进行对比，它总是记录更低的值，因为没对多边形排序，所以后处理的多边形并不总会覆盖前面的。</p>
+<p>07:45 Z Fighting 错误</p>
+<p>采用深度缓冲算法，哪个图形在前将会变化</p>
+<p>07:51 背面剔除 Back Face Culling</p>
+<p>由于游戏角色的头部或地面，只能看到朝外的一面，所以为了节省处理时间，会忽略多边形背面，这很好,但有个bug是 如果进入模型内部往外看，头部和地面会消失</p>
+<p>08:53 表面法线 Surface Normal</p>
+<p>在3D图形上任取一小个区域，它面对的方向叫“表面法线”</p>
+<p>09:33 平面着色 Flat Shading</p>
+<p>基本的照明算法，缺点是使多边形边界明显，看上去不光滑</p>
+<p>09:43 高洛德着色 Gouraud shading, 冯氏着色 Phong Shading</p>
+<p>不只用一种颜色上色</p>
+<p>10:06 纹理映射 Texture Mapping</p>
+<p>纹理在图形学中指外观，纹理有多种算法来达到花哨效果，最经典的是纹理映射。</p>
+<p><img src="/2024/02/17/cs-crash-course/27-3.png"></p>
+<p>​                                                          纹理映射示意图</p>
+<p>11:24 图形处理单元 GPU, Graphics Processing Unit</p>
+<p>方便并行处理多个图形，并把图形分成一个个小块来处理。</p>
+<p>（28-30：介绍网络的发展和支撑他们的基础原理和技术）</p>
+<h2 id="第-28-集：计算机网络"><a href="#第-28-集：计算机网络" class="headerlink" title="第 28 集：计算机网络"></a>第 28 集：计算机网络</h2><h3 id="1-局域网-Local-Area-Networks-LAN"><a href="#1-局域网-Local-Area-Networks-LAN" class="headerlink" title="1. 局域网 Local Area Networks - LAN"></a>1. 局域网 Local Area Networks - LAN</h3><p>计算机近距离构成的小型网络，叫局域网（LAN），以太网是经典的局域网</p>
+<h3 id="2-媒体访问控制地址-Media-Access-Control-address-MAC"><a href="#2-媒体访问控制地址-Media-Access-Control-address-MAC" class="headerlink" title="2.媒体访问控制地址 Media Access Control address - MAC"></a>2.媒体访问控制地址 Media Access Control address - MAC</h3><p>用于确认局域网和WiFi传输的对象</p>
+<h3 id="3-载波侦听多路访问-Carrier-Sense-Multiple-Access-CSMA"><a href="#3-载波侦听多路访问-Carrier-Sense-Multiple-Access-CSMA" class="headerlink" title="3.载波侦听多路访问 Carrier Sense Multiple Access - CSMA"></a>3.载波侦听多路访问 Carrier Sense Multiple Access - CSMA</h3><p>多台电脑共享一个传输媒介，叫做载波侦听多路访问，共享媒介又称载体，如WiFi的载体是空气，以太网的载体是电线。载体传输数据的速度叫带宽，</p>
+<h3 id="4-指数退避-Exponential-Backoff"><a href="#4-指数退避-Exponential-Backoff" class="headerlink" title="4.指数退避 Exponential Backoff"></a>4.指数退避 Exponential Backoff</h3><p>当多台计算机同时想要传输数据时，就会发生冲突，当计算机检测到冲突 就会在重传之前等待一小段时间，，这一段时间包括固定时间+随机时间，再次堵塞时固定时间将会指数级增加，这叫做指数退避。</p>
+<h3 id="5-冲突域-Collision-Domain"><a href="#5-冲突域-Collision-Domain" class="headerlink" title="5.冲突域 Collision Domain"></a>5.冲突域 Collision Domain</h3><p>载体和其中的设备总称为“冲突域”，为了避免冲突，可以用<strong>交换器</strong></p>
+<p>07:08 电路交换 Circuit Switching</p>
+<p>缺点：不灵活且数量昂贵</p>
+<p><img src="/2024/02/17/cs-crash-course/28-1.png"></p>
+<h3 id="6-报文交换-Message-Switching"><a href="#6-报文交换-Message-Switching" class="headerlink" title="6. 报文交换 Message Switching"></a>6. 报文交换 Message Switching</h3><p>报文的具体格式简称IP，每一个电脑都会有一个IP地址</p>
+<p>好处，可以用不同路由，通信更可靠也更能容错。</p>
+<p>坏处，当报文比较大的时候，会堵塞线路。解决方法是 将大报文分成很多小块，叫”<strong>数据包</strong>“，来进行运输，这叫“<strong>分组交换</strong>”。路由器会平衡与其他路由器之间的负载  以确保传输可以快速可靠，这叫”<strong>阻塞控制</strong>“</p>
+<p>消息沿着路由跳转的次数 叫”<strong>跳数</strong>“(hop count)，看到哪条线路的跳数很高，说明出了故障，这叫跳数限制。</p>
+<p><img src="/2024/02/17/cs-crash-course/28-2.png"></p>
+<h2 id="第-29-集：互联网"><a href="#第-29-集：互联网" class="headerlink" title="第 29 集：互联网"></a>第 29 集：互联网</h2><h3 id="1-连接互联网的过程"><a href="#1-连接互联网的过程" class="headerlink" title="1.连接互联网的过程"></a>1.连接互联网的过程</h3><p>你所用的电脑首先要连接到局域网，家里WiFi路由器连着的所有设备，组成了<strong>局域网</strong>，局域网再连到<strong>广域网（WAN）</strong>，广域网的路由器一般属于你的<strong>互联网服务提供商（ISP）</strong>，再连更大的WAN，往复几次，最后连到互联网主干。</p>
+<h3 id="2-IP-互联网协议-Internet-Protocol"><a href="#2-IP-互联网协议-Internet-Protocol" class="headerlink" title="2.IP - 互联网协议 - Internet Protocol"></a>2.IP - 互联网协议 - Internet Protocol</h3><p>IP负责把数据包送到正确的计算机</p>
+<h3 id="3-UDP-用户数据报协议-User-Datagram-Protocol"><a href="#3-UDP-用户数据报协议-User-Datagram-Protocol" class="headerlink" title="3. UDP - 用户数据报协议 - User Datagram Protocol"></a>3. UDP - 用户数据报协议 - User Datagram Protocol</h3><p>UDP负责把数据包传送到正确的程序，有端口号（哪个程序），校验和（数据是否损坏）</p>
+<h3 id="4-校验和-Checksum"><a href="#4-校验和-Checksum" class="headerlink" title="4.校验和 - Checksum"></a>4.校验和 - Checksum</h3><p>UDP校验和只有16位，超过这个数，弃高位。</p>
+<h3 id="5-TCP-传输控制协议-Transmission-Control-Protocol"><a href="#5-TCP-传输控制协议-Transmission-Control-Protocol" class="headerlink" title="5.TCP - 传输控制协议 - Transmission Control Protocol"></a>5.TCP - 传输控制协议 - Transmission Control Protocol</h3><p>如果要控制所有数据必须到达，就用传输控制协议</p>
+<h4 id="TCP的特点"><a href="#TCP的特点" class="headerlink" title="TCP的特点"></a>TCP的特点</h4><p>1 控制发送的文件按顺序到达</p>
+<p>2 要求接收方确认无误后发送确认码（ACK），确认码的成功率和来回时间可以用来推测网络的拥堵程度，TCP可以根据这个调整传输率。由于这个特点，TCP对时间要求高的程序不适用</p>
+<h3 id="6-DNS-域名系统-Domain-Name-System"><a href="#6-DNS-域名系统-Domain-Name-System" class="headerlink" title="6 DNS - 域名系统 - Domain Name System"></a>6 DNS - 域名系统 - Domain Name System</h3><p>计算机访问网站时需要两样，IP地址和端口号，但记数字很难，所以互联网通过域名系统把域名和IP地址一一对应。域名系统是树状结构</p>
+<p><img src="/2024/02/17/cs-crash-course/29-1.png"></p>
+<p>10:47 OSI - 开放式系统互联通信参考模型 - Open System Interconnection</p>
+<p><img src="/2024/02/17/cs-crash-course/29-2.png"></p>
+<h2 id="第-30-集：万维网（WWW）"><a href="#第-30-集：万维网（WWW）" class="headerlink" title="第 30 集：万维网（WWW）"></a>第 30 集：万维网（WWW）</h2><h3 id="1-基本单位"><a href="#1-基本单位" class="headerlink" title="1.基本单位"></a>1.基本单位</h3><p>万维网在互联网上运行，它的基本单位是页面</p>
+<h3 id="2-超链接-Hyperlinks"><a href="#2-超链接-Hyperlinks" class="headerlink" title="2.超链接 Hyperlinks"></a>2.超链接 Hyperlinks</h3><p>点超链接可以去到另一个页面，文字超链接又叫超文本</p>
+<p>​                                <img src="/2024/02/17/cs-crash-course/30-1.png"></p>
+<h3 id="3-状态码"><a href="#3-状态码" class="headerlink" title="3.状态码"></a>3.状态码</h3><p>状态码代表所访问网页的状态</p>
+<h3 id="4-URL-统一资源定位器-Uniform-Resource-Locator"><a href="#4-URL-统一资源定位器-Uniform-Resource-Locator" class="headerlink" title="4.URL - 统一资源定位器 - Uniform Resource Locator"></a>4.URL - 统一资源定位器 - Uniform Resource Locator</h3><p>网页的唯一网址</p>
+<h3 id="5-HTTP-超文本传输协议-HyperText-Transfer-Protocol"><a href="#5-HTTP-超文本传输协议-HyperText-Transfer-Protocol" class="headerlink" title="5.HTTP - 超文本传输协议 - HyperText Transfer Protocol"></a>5.HTTP - 超文本传输协议 - HyperText Transfer Protocol</h3><h3 id="6-HTML-超文本标记语言-HyperText-Markup-Language"><a href="#6-HTML-超文本标记语言-HyperText-Markup-Language" class="headerlink" title="6.HTML - 超文本标记语言 - HyperText Markup Language"></a>6.HTML - 超文本标记语言 - HyperText Markup Language</h3><h3 id="7-万维网发展史"><a href="#7-万维网发展史" class="headerlink" title="7.万维网发展史"></a>7.万维网发展史</h3><p>1 第一个浏览器和服务器是 Tim Berners-Lee 花了 2 个月在 CERN 写的</p>
+<p>2 1991年万维网就此诞生</p>
+<p>3  Jerry 和 David 的万维网指南 后来改名成 Yahoo</p>
+<p>4 搜索引擎 JumpStation</p>
+<p>（包括爬虫 索引 用法）</p>
+<p>5 搜索引擎 Google</p>
+<p>   改进排序方法，按照链接指向的多少来排序</p>
+<h3 id="8-网络中立性"><a href="#8-网络中立性" class="headerlink" title="8.网络中立性"></a>8.网络中立性</h3><p>平等地对待每个数据包</p>
+<h2 id="第-31-集：计算机安全"><a href="#第-31-集：计算机安全" class="headerlink" title="第 31 集：计算机安全"></a>第 31 集：计算机安全</h2><h3 id="1-保密性-完整性-可用性-Secrecy-Integrity-Availability"><a href="#1-保密性-完整性-可用性-Secrecy-Integrity-Availability" class="headerlink" title="1. 保密性, 完整性, 可用性 Secrecy, Integrity, Availability"></a>1. 保密性, 完整性, 可用性 Secrecy, Integrity, Availability</h3><p>计算机为了安全，要实现三性</p>
+<p>保密性：只有有权限的人，才能读取计算机系统和数据</p>
+<p>完整性：只有有权限的人，才能使用和修改系统和数据</p>
+<p>可用性：有权限的人，可以随时访问计算机系统和数据</p>
+<h3 id="2-Threat-Model-威胁模型"><a href="#2-Threat-Model-威胁模型" class="headerlink" title="2.Threat Model 威胁模型"></a>2.Threat Model 威胁模型</h3><p>为了实现这三个目标，安全专家会从 \N 抽象层面想象”敌人”可能是谁，这叫”威胁模型分析”，模型会对攻击者有个大致描述：\N 能力如何，目标可能是什么，可能用什么手段，攻击手段又叫”攻击矢量”，”威胁模型分析”让你能为特定情境做准备，不被可能的攻击手段数量所淹没。</p>
+<p>很多安全问题可以总结成两个：</p>
+<p>你是谁？你能访问什么？</p>
+<h3 id="3-身份验证-Authentication-的三种方式："><a href="#3-身份验证-Authentication-的三种方式：" class="headerlink" title="3.身份验证 (Authentication) 的三种方式："></a>3.身份验证 (Authentication) 的三种方式：</h3><p>What you know, 你知道什么 ex、用户名和密码</p>
+<p>What you have, 你有什么      </p>
+<p>What you are, 你是什么</p>
+<h3 id="4-访问控制-Access-Control"><a href="#4-访问控制-Access-Control" class="headerlink" title="4.访问控制 Access Control"></a>4.访问控制 Access Control</h3><p>Bell LaPadula model <strong>不能向上读取，不能向下写入</strong></p>
+<h3 id="5-安全内核"><a href="#5-安全内核" class="headerlink" title="5.安全内核"></a><strong>5.安全内核</strong></h3><p>安全内核应该有一组尽可能少的操作系统软件，和尽量少的代码。</p>
+<h3 id="6-独立安全检查和质量验证"><a href="#6-独立安全检查和质量验证" class="headerlink" title="6.独立安全检查和质量验证"></a>6.独立安全检查和质量验证</h3><p>最有效的验证手段</p>
+<h3 id="7-隔离-Isolation-沙盒-Sandbox"><a href="#7-隔离-Isolation-沙盒-Sandbox" class="headerlink" title="7.隔离 Isolation, 沙盒 Sandbox"></a>7.隔离 Isolation, 沙盒 Sandbox</h3><p>优秀的开发人员，应该计划当程序被攻破后，\N如何限制损害，控制损害的最大程度，并且不让它危害到计算机上其他东西，这叫”隔离”。要实现隔离，我们可以”沙盒”程序，这好比把生气的小孩放在沙箱里，他们只能摧毁自己的沙堡，不会影响到其他孩子，方法是给每个程序独有的内存块，其他程序不能动。一台计算机可以运行多个虚拟机，如果一个程序出错，最糟糕的情况是它自己崩溃，或者搞坏它处于的虚拟机。</p>
+<h2 id="第-32-集：黑客与攻击"><a href="#第-32-集：黑客与攻击" class="headerlink" title="第 32 集：黑客与攻击"></a>第 32 集：黑客与攻击</h2><h3 id="1-社会工程学-Social-Engineering"><a href="#1-社会工程学-Social-Engineering" class="headerlink" title="1.社会工程学 Social Engineering"></a>1.社会工程学 Social Engineering</h3><p>欺骗别人获得信息，或让人安装易于攻击的系统</p>
+<h3 id="2-钓鱼-Phishing"><a href="#2-钓鱼-Phishing" class="headerlink" title="2.钓鱼 Phishing"></a>2.钓鱼 Phishing</h3><h3 id="3-假托-Pretexting"><a href="#3-假托-Pretexting" class="headerlink" title="3.假托 Pretexting"></a>3.假托 Pretexting</h3><h3 id="4-木马-Trojan-Horses"><a href="#4-木马-Trojan-Horses" class="headerlink" title="4.木马 Trojan Horses"></a>4.木马 Trojan Horses</h3><h3 id="5-NAND镜像-NAND-Mirroring"><a href="#5-NAND镜像-NAND-Mirroring" class="headerlink" title="5.NAND镜像 NAND Mirroring"></a>5.NAND镜像 NAND Mirroring</h3><p>——来避免输错密码后等待</p>
+<h3 id="6-漏洞利用-Exploit"><a href="#6-漏洞利用-Exploit" class="headerlink" title="6.漏洞利用 Exploit"></a>6.漏洞利用 Exploit</h3><h3 id="7-缓冲区溢出-Buffer-Overflow"><a href="#7-缓冲区溢出-Buffer-Overflow" class="headerlink" title="7. 缓冲区溢出 Buffer Overflow"></a>7. 缓冲区溢出 Buffer Overflow</h3><p>——一种常见的漏洞利用</p>
+<h3 id="9-边界检查-Bounds-Checking和金丝雀"><a href="#9-边界检查-Bounds-Checking和金丝雀" class="headerlink" title="9.边界检查 Bounds Checking和金丝雀"></a>9.边界检查 Bounds Checking和金丝雀</h3><p>——防止缓冲区溢出的手段，金丝雀，留出一些不用的空间，当空间变少时，说明有攻击者乱来。</p>
+<p>​      </p>
+<h3 id="10-代码注入-Code-Injection"><a href="#10-代码注入-Code-Injection" class="headerlink" title="10. 代码注入 Code Injection"></a>10. 代码注入 Code Injection</h3><p>把代码注入到程序中，造成混乱</p>
+<h3 id="11-零日漏洞-Zero-Day-Vulnerability"><a href="#11-零日漏洞-Zero-Day-Vulnerability" class="headerlink" title="11.零日漏洞 Zero Day Vulnerability"></a>11.零日漏洞 Zero Day Vulnerability</h3><p>当软件制造者不知道软件有新漏洞被发现了，这个漏洞被称为“零日漏洞”</p>
+<h3 id="12-计算机蠕虫-Worms"><a href="#12-计算机蠕虫-Worms" class="headerlink" title="12.计算机蠕虫 Worms"></a>12.计算机蠕虫 Worms</h3><p>如果有足够多的电脑有漏洞，让恶意程序可以在电脑间互相传播，这种恶意程序叫做蠕虫</p>
+<h3 id="13-僵尸网络-Botnet"><a href="#13-僵尸网络-Botnet" class="headerlink" title="13.僵尸网络 Botnet"></a>13.僵尸网络 Botnet</h3><p>如果黑客掌握足够多电脑，那他们可以组成“僵尸网络”</p>
+<h2 id="第-33-集：加密"><a href="#第-33-集：加密" class="headerlink" title="第 33 集：加密"></a>第 33 集：加密</h2><h3 id="1-加密-Encryption，解密-Decryption"><a href="#1-加密-Encryption，解密-Decryption" class="headerlink" title="1. 加密 - Encryption，解密 - Decryption"></a>1. 加密 - Encryption，解密 - Decryption</h3><p>01:11 凯撒加密 Caesar cipher——一种替换加密  Substitution cipher，把字母替换成其他字母</p>
+<p><img src="/2024/02/17/cs-crash-course/33-1.png"></p>
+<p>​                                       列移位加密 Columnar transposition cipher</p>
+<p>02:37 德国 Enigma 加密机 一种进阶的替换加密，每一次的映射都不同。</p>
+<p>04:54 1977年”数据加密标准” - Data Encryption Standard (DES)</p>
+<p>05:24 2001年”高级加密标准” - Advanced Encryption Standard (AES)</p>
+<h3 id="2-密钥交换-Key-exchange"><a href="#2-密钥交换-Key-exchange" class="headerlink" title="2. 密钥交换 - Key exchange"></a>2. 密钥交换 - Key exchange</h3>]]></content>
   </entry>
   <entry>
     <title>cs50</title>
