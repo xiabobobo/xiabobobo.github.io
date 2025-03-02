@@ -2570,7 +2570,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #305ee5;
+  background: #8613ed;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2627,7 +2627,7 @@ body {
 .main-inner > .comments,
 .main-inner > .pagination {
   padding: 20px;
-  background: rgba(245,245,245,0.42);
+  background: rgba(255,255,255,0.5);
 }
 body {
   color: #000;
