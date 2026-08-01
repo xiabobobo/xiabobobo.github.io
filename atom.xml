@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Opps!wow!</title>
+  <title>Opps!Aaaaanonymity&#39;s blog!</title>
   
-  <subtitle>1.Stay hungry, Stay foolish 2.keep clam and carry on 3.do right thing  do thing right.</subtitle>
+  <subtitle>do right thing  do thing right.</subtitle>
   <link href="http://xiaowang.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaowang.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://xiaowang.github.io/</id>
   
   <author>
-    <name>xiaowang</name>
+    <name>xiaowang/aaaaanonymity</name>
     
   </author>
   
